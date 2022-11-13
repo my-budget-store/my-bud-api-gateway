@@ -1,0 +1,17 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/v1/products",
+      "DownstreamScheme": "https",
+      "SwaggerKey": "products",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7182
+        }
+      ],
+      "UpstreamPathTemplate": "/mybud/products",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ]
+}
