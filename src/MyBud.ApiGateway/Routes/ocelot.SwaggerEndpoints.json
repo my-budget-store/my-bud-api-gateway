@@ -1,0 +1,26 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "apiGateway",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "My Bud API Gateway",
+          "Version": "v1",
+          "Url": "http://localhost:5101/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "products",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "Products API",
+          "Version": "v1",
+          "Url": "https://localhost:7182/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
