@@ -1,21 +1,20 @@
 {
   "Routes": [
     {
-      "UpstreamPathTemplate": "/mybud/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Patch" ],
-      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamPathTemplate": "/api/auth/{everything}",
       "DownstreamScheme": "https",
-      "SwaggerKey": "products",
+      "SwaggerKey": "auth",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7182
+          "Port": 7121
         }
       ],
+      "UpstreamPathTemplate": "/mybud/auth/{evrything}",
+      "UpstreamHttpMethod": [ "Post" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       }
     }
-  ]
 }

@@ -7,14 +7,14 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["MyBud.ApiGateway/MyBud.ApiGateway.csproj", "MyBud.ApiGateway/"]
-RUN dotnet restore "MyBud.ApiGateway/MyBud.ApiGateway.csproj"
+COPY ["src/MyBud.ApiGateway/MyBud.ApiGateway.csproj", "src/MyBud.ApiGateway/"]
+RUN dotnet restore "src/MyBud.ApiGateway/MyBud.ApiGateway.csproj"
 COPY . .
-WORKDIR "/src/MyBud.ApiGateway"
+WORKDIR "/src/src/MyBud.ApiGateway"
 RUN dotnet build "MyBud.ApiGateway.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "MyBud.ApiGateway.csproj" -c Release -o /app/publish
+RUN dotnet publish "MyBud.ApiGateway.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app

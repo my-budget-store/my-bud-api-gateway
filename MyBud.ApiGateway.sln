@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\MyBud.ApiGateway", "src\MyBud.ApiGateway\MyBud.ApiGateway.csproj", "{DB1E6E08-D942-42C7-B83A-A08B140B4A00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBud.ApiGateway", "src\MyBud.ApiGateway\MyBud.ApiGateway.csproj", "{DB1E6E08-D942-42C7-B83A-A08B140B4A00}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F130EDBE-4AD6-410A-814B-EC5240FEDE08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DB1E6E08-D942-42C7-B83A-A08B140B4A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB1E6E08-D942-42C7-B83A-A08B140B4A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB1E6E08-D942-42C7-B83A-A08B140B4A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F130EDBE-4AD6-410A-814B-EC5240FEDE08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F130EDBE-4AD6-410A-814B-EC5240FEDE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F130EDBE-4AD6-410A-814B-EC5240FEDE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F130EDBE-4AD6-410A-814B-EC5240FEDE08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

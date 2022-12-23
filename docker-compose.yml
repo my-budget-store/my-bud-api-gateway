@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mybud.apigateway:
+    image: ${DOCKER_REGISTRY-}mybudapigateway
+    build:
+      context: .
+      dockerfile: src/MyBud.ApiGateway/Dockerfile

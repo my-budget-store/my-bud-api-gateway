@@ -21,6 +21,17 @@
           "Url": "https://localhost:7182/swagger/v1/swagger.json"
         }
       ]
+    },
+    {
+      "Key": "auth",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "Auth API",
+          "Version": "v1",
+          "Url": "https://localhost:7121/swagger/v1/swagger.json"
+        }
+      ]
     }
   ]
 }
