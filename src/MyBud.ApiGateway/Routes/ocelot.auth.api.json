@@ -1,20 +1,17 @@
 {
   "Routes": [
     {
+      //"SwaggerKey": "auth",
+      "UpstreamPathTemplate": "/mybud/auth/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
       "DownstreamPathTemplate": "/api/auth/{everything}",
       "DownstreamScheme": "https",
-      "SwaggerKey": "auth",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "host.docker.internal",
           "Port": 7121
         }
-      ],
-      "UpstreamPathTemplate": "/mybud/auth/{evrything}",
-      "UpstreamHttpMethod": [ "Post" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      ]
     }
+  ]
 }

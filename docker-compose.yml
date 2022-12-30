@@ -3,6 +3,15 @@ version: '3.4'
 services:
   mybud.apigateway:
     image: ${DOCKER_REGISTRY-}mybudapigateway
+    container_name: api-gateway
     build:
       context: .
       dockerfile: src/MyBud.ApiGateway/Dockerfile
+    ports:
+      - 7101:7101
+    networks:
+      - my-budget-store
+
+networks:
+  my-budget-store:
+    external: true
