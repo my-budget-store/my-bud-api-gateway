@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      //"SwaggerKey": "products",
+      "SwaggerKey": "products",
       "UpstreamPathTemplate": "/mybud/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Patch" ],
       "DownstreamPathTemplate": "/{everything}",
@@ -9,6 +9,10 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "host.docker.internal",
+          "Port": 7182
+        },
+        {
+          "Host": "localhost",
           "Port": 7182
         }
       ],
