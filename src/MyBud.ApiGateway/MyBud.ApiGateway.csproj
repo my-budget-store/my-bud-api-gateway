@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<UserSecretsId>api-gateway-d69f6024-0128-482e-b8c9-ea37eed0357d</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
