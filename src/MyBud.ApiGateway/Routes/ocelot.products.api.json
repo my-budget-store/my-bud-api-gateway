@@ -5,15 +5,11 @@
       "UpstreamPathTemplate": "/mybud/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Patch" ],
       "DownstreamPathTemplate": "/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "host.docker.internal",
-          "Port": 7182
-        },
-        {
-          "Host": "localhost",
-          "Port": 7182
+          "Port": 5182
         }
       ],
       "AuthenticationOptions": {

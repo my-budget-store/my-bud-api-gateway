@@ -7,7 +7,7 @@
         {
           "Name": "My Bud API Gateway",
           "Version": "v1",
-          "Url": "http://localhost:5101/swagger/v1/swagger.json"
+          "Url": "http://host.docker.internal:5101/swagger/v1/swagger.json"
         }
       ]
     },
@@ -18,18 +18,7 @@
         {
           "Name": "Products API",
           "Version": "v1",
-          "Url": "https://localhost:7182/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "auth",
-      "TransformByOcelotConfig": false,
-      "Config": [
-        {
-          "Name": "Auth API",
-          "Version": "v1",
-          "Url": "https://localhost:7121/swagger/v1/swagger.json"
+          "Url": "http://host.docker.internal:5182/swagger/v1/swagger.json"
         }
       ]
     }
